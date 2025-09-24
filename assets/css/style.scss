@@ -1,0 +1,147 @@
+---
+---
+
+@import "minima";
+
+/* Custom styles for Databayes */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #ffffff;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  border-bottom: none;
+}
+
+.site-title {
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.site-title:hover {
+  color: var(--secondary-color) !important;
+}
+
+.site-nav .page-link {
+  color: white;
+  font-weight: 500;
+}
+
+.site-nav .page-link:hover {
+  color: var(--secondary-color);
+}
+
+.intro {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.post-link:hover {
+  color: var(--secondary-color);
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-excerpt {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.post-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.tag {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.site-footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.footer-heading {
+  color: white;
+}
+
+.footer-col a {
+  color: var(--secondary-color);
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .intro {
+    padding: 1rem;
+  }
+  
+  .post-list li {
+    padding: 1rem;
+  }
+}
