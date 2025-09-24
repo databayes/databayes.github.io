@@ -1,0 +1,48 @@
+# Site settings
+title: Databayes Technical Blog
+email: contact@databayes.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Technical blog posts supporting data science and engineering work at Databayes.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://databayes.github.io" # the base hostname & protocol for your site
+github_username: databayes
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title:output_ext
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Databayes Team"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Theme
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
