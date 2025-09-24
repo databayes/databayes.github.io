@@ -4,7 +4,7 @@ title: "All Posts"
 permalink: /posts/
 ---
 
-# All Posts
+<h1>All Posts</h1>
 
 {%- if site.posts.size > 0 -%}
 <ul class="post-list">
